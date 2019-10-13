@@ -1,4 +1,4 @@
-package com.ycar.boot.par.entity;
+package com.testboot.entity;
 
 import java.util.Date;
 
