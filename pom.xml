@@ -8,11 +8,11 @@
 		<version>2.1.8.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.testboot</groupId>
-	<artifactId>BootTest</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>Ycar_Boot_Server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BootTest</name>
-	<description>Payment and Review - Boot Server</description>
+	<name>Ycar_Boot_Server</name>
+	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -43,6 +43,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -53,4 +62,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>

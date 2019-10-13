@@ -1,4 +1,4 @@
-package com.testboot.entity;
+package com.ycar.boot.par.entity;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -9,14 +9,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.SecondaryTable;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "D_CARPOOL")
-@SecondaryTable(name = "DRIVER", pkJoinColumns = @PrimaryKeyJoinColumn(name = "d_idx"))
 public class CarpoolEntity {
+	
 	@Id
 	@Column
 	private long dr_idx;
@@ -60,6 +58,7 @@ public class CarpoolEntity {
 	@Column(length = 500, nullable = false)
 	private String d_endlat;
 	
+
 	public Long getDr_idx() {
 		return dr_idx;
 	}
@@ -172,12 +171,6 @@ public class CarpoolEntity {
 		this.d_endlat = d_endlat;
 	}
 	
-	
-
-	public void setDr_idx(long dr_idx) {
-		this.dr_idx = dr_idx;
-	}
-
 	@Override
 	public String toString() {
 		return "CarpoolEntity [dr_idx=" + dr_idx + ", d_idx=" + d_idx + ", d_date=" + d_date + ", d_starttime="
@@ -187,9 +180,6 @@ public class CarpoolEntity {
 				+ d_endlat + "]";
 	}
 
-	
-	
-	
 	/*@OneToMany(mappedBy = "carpoolEntity") //대상 entity 에서 관계로 설정된 변수
 	private List<ReservationEntity> reservations = new ArrayList<ReservationEntity>();
 	

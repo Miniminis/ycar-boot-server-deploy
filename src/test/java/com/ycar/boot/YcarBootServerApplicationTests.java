@@ -1,4 +1,4 @@
-package com.testboot;
+package com.ycar.boot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BootTestApplicationTests {
+public class YcarBootServerApplicationTests {
 
 	@Test
 	public void contextLoads() {
